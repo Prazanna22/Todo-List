@@ -11,7 +11,7 @@ export const LeftSide = ({ setFilter, closeSidebar }) => {
         <button
           onClick={() => {
             setFilter("all");
-            closeSidebar(); // ✅ Close Sidebar After Clicking
+            closeSidebar(); 
           }}
           className="w-full bg-blue-500 text-white py-2 rounded-md shadow hover:bg-blue-600"
         >
@@ -21,7 +21,7 @@ export const LeftSide = ({ setFilter, closeSidebar }) => {
         <button
           onClick={() => {
             setFilter("completed");
-            closeSidebar(); // ✅ Close Sidebar After Clicking
+            closeSidebar();
           }}
           className="w-full bg-green-500 text-white py-2 rounded-md shadow hover:bg-green-600"
         >
@@ -31,7 +31,7 @@ export const LeftSide = ({ setFilter, closeSidebar }) => {
         <button
           onClick={() => {
             setFilter("pending");
-            closeSidebar(); // ✅ Close Sidebar After Clicking
+            closeSidebar(); // 
           }}
           className="w-full bg-yellow-500 text-white py-2 rounded-md shadow hover:bg-yellow-600"
         >
