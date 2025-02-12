@@ -4,7 +4,7 @@ const TaskItem = ({ todo, onComplete, onDelete }) => {
   return (
     <ul className="flex flex-col gap-3 justify-center items-center w-full pb-20">
       {todo.map((todo, index) => (
-        <div key={index} className="flex gap-3 items-center bg-gray-100 py-12 px-4 w-full rounded-lg shadow-md">
+        <div key={index} className="flex gap-3 items-center bg-gray-100 p-8 px-4 w-full rounded-lg shadow-md">
           <input
             type="checkbox"
             checked={todo.complete}
