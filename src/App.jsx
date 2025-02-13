@@ -36,10 +36,17 @@ function App() {
       <Header toggleSidebar={() => setShowSidebar(!showSidebar)} />
 
       <div className="flex flex-col md:flex-row flex-grow">
+
+      
         <div
-          className={`fixed md:relative w-full md:w-[250px] bg-gray-100 z-10 ${showSidebar ? "block h-screen" : "hidden md:block"}`} >
+          className={`fixed top-0 left-0 h-full w-[250px] bg-gray-100 shadow-lg z-10 transform transition-transform duration-300 ease-in-out ${showSidebar ? "translate-x-0" : "-translate-x-full"
+            } md:relative md:translate-x-0 md:w-[200px]`}
+        >
           <LeftSide setFilter={setFilter} closeSidebar={() => setShowSidebar(false)} />
         </div>
+
+
+
         <main className={`transition-all duration-300 flex-grow p-4 bg-gray-100 h-auto ${deletedTasks.length > 0 ? "md:mr-[250px]" : "mr-0"}`}>
           <TodoList addDeletedTask={addDeletedTask} filter={filter} />
         </main>
